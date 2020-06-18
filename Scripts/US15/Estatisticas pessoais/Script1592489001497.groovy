@@ -15,21 +15,33 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import org.junit.Test as Test
+import org.openqa.selenium.By as By
+import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+import org.openqa.selenium.support.ui.Select as Select
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://localhost:44364/')
 
-WebUI.setText(findTestObject('US14/Page_Login - PMVIZ/input_Username_username'), 'katalon4')
+WebUI.setText(findTestObject('Object Repository/US14/Page_Login - PMVIZ/input_Username_username'), 'tokyo')
 
-WebUI.setEncryptedText(findTestObject('US14/Page_Login - PMVIZ/input_Password_password'), 'iGDxf8hSRT4=')
+WebUI.setEncryptedText(findTestObject('Object Repository/US14/Page_Login - PMVIZ/input_Password_password'), 'iGDxf8hSRT4=')
 
-WebUI.click(findTestObject('US14/Page_Login - PMVIZ/input_Password_password'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/US14/Page_Login - PMVIZ/button_Log In'))
 
-WebUI.click(findTestObject('US1/Page_Login - PMVIZ/button_Log In'))
+WebUI.click(findTestObject('Object Repository/US14/Page_Home Page - PMVIZ/a_Minhas Estatsticas'))
 
-WebUI.click(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/div_No processes associated to user katalon4'))
+WebUI.click(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/button_Estatsticas'))
+
+new Select(WebUiCommonHelper.findWebElement(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/select_Escolha um'), 
+    2)).selectByValue('1')
+
+WebUI.verifyElementPresent(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/divchart'), 0)
 
 WebUI.closeBrowser()
 
