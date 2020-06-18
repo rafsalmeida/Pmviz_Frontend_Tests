@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>divchart</name>
+   <tag></tag>
+   <elementGuidId>93026530-d150-45d0-8b15-3ea314c5a125</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='wrapper']/div[3]/div/div/div/div[2]/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>card-box</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+                    110115120125130135140Média em minutosMédia UtilizadorMédia Geralkendo.syncReady(function(){jQuery(&quot;#chart&quot;).kendoChart({&quot;categoryAxis&quot;:[{&quot;line&quot;:{&quot;visible&quot;:false},&quot;name&quot;:&quot;series-axis&quot;}],&quot;chartArea&quot;:{&quot;height&quot;:210},&quot;legend&quot;:{&quot;position&quot;:&quot;top&quot;},&quot;pannable&quot;:{&quot;lock&quot;:&quot;y&quot;},&quot;series&quot;:[{&quot;name&quot;:&quot;Média Utilizador&quot;,&quot;data&quot;:[135.0],&quot;type&quot;:&quot;column&quot;},{&quot;name&quot;:&quot;Média Geral&quot;,&quot;data&quot;:[120.0],&quot;type&quot;:&quot;column&quot;}],&quot;title&quot;:{&quot;text&quot;:&quot;Média em minutos&quot;},&quot;tooltip&quot;:{&quot;format&quot;:&quot;{0}%&quot;,&quot;template&quot;:&quot;#= series.name #: #= value # minutos&quot;,&quot;visible&quot;:true},&quot;zoomable&quot;:{&quot;mousewheel&quot;:{&quot;lock&quot;:&quot;y&quot;},&quot;selection&quot;:{&quot;lock&quot;:&quot;y&quot;}}});});
+                </value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;wrapper&quot;)/div[@class=&quot;content-page&quot;]/div[@class=&quot;content&quot;]/div[@class=&quot;container-fluid&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col&quot;]/div[@class=&quot;card-box&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='wrapper']/div[3]/div/div/div/div[2]/div</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/following::div[2]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Escolha uma atividade:'])[1]/following::div[3]</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div[2]/div</value>
+   </webElementXpaths>
+</WebElementEntity>

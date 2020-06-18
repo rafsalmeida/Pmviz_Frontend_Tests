@@ -15,7 +15,14 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.webui.common.WebUiCommonHelper as WebUiCommonHelper
+import org.junit.Test as Test
+import org.openqa.selenium.By as By
+import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+import org.openqa.selenium.support.ui.Select as Select
 
 WebUI.openBrowser('')
 
@@ -29,8 +36,18 @@ WebUI.click(findTestObject('Object Repository/US14/Page_Login - PMVIZ/button_Log
 
 WebUI.click(findTestObject('Object Repository/US14/Page_Home Page - PMVIZ/a_Minhas Estatsticas'))
 
-WebUI.verifyElementPresent(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/div_Processos                              _620df1'), 
-    0)
+WebUI.click(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/button_Estatsticas'))
+
+new Select(WebUiCommonHelper.findWebElement(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/select_Escolha um'), 2)).selectByValue(
+    '1')
+
+new Select(WebUiCommonHelper.findWebElement(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/select_Escolha outro processo'), 
+    2)).selectByValue('29')
+
+new Select(WebUiCommonHelper.findWebElement(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/select_Escolha um'), 2)).selectByValue(
+    '1')
+
+WebUI.verifyElementPresent(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/divchart2'), 0)
 
 WebUI.closeBrowser()
 
