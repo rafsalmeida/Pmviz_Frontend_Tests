@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://localhost:44364/')
+WebUI.navigateToUrl('https://localhost:5001/')
 
 WebUI.setText(findTestObject('US14/Page_Login - PMVIZ/input_Username_username'), 'katalon4')
 
@@ -29,7 +29,10 @@ WebUI.click(findTestObject('US14/Page_Login - PMVIZ/input_Password_password'), F
 
 WebUI.click(findTestObject('US1/Page_Login - PMVIZ/button_Log In'))
 
-WebUI.click(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/div_No processes associated to user katalon4'))
+WebUI.click(findTestObject('US14/Page_Home Page - PMVIZ/a_Minhas Estatsticas'))
+
+WebUI.verifyElementPresent(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/div_No processes associated to user katalon4'), 
+    0)
 
 WebUI.closeBrowser()
 

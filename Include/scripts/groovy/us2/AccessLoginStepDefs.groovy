@@ -55,7 +55,7 @@ class AccessLoginStepDefs {
 	
 	@When("I am in the register page")
 	public void i_am_in_the_register_page() {
-	    WebUI.click(findTestObject('Object Repository/US2/Page_Login - PMVIZ/b_Sign Up'))
+		WebUI.click(findTestObject('US2/Page_Home Page - PMVIZ/a_Criar Utilizadores'))
 
 	}
 	

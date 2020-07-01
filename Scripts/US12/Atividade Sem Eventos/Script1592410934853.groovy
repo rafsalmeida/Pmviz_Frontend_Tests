@@ -27,7 +27,7 @@ import org.openqa.selenium.support.ui.Select as Select
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://localhost:44364/')
+WebUI.navigateToUrl('https://localhost:5001/')
 
 WebUI.setText(findTestObject('Object Repository/US12/Page_Login - PMVIZ/input_Username_username'), 'admin')
 

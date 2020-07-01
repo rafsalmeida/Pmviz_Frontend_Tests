@@ -15,15 +15,4 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
-
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl('https://localhost:44364/')
-
-WebUI.click(findTestObject('Object Repository/US1/Page_Login - PMVIZ/b_Sign Up'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/US1/Page_Register - PMVIZ/p_Create your account here'), 0)
-
-WebUI.closeBrowser()
 
