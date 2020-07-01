@@ -19,15 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://localhost:44364/')
+WebUI.navigateToUrl('https://localhost:5001/')
 
-WebUI.click(findTestObject('Page_Login - PMVIZ/b_Sign Up'))
+WebUI.setText(findTestObject('Object Repository/US3/Page_Login - PMVIZ/input_Username_username'), 'administrator')
 
-WebUI.setText(findTestObject('Object Repository/US2/Page_Register - PMVIZ/input_Username_username'), 'katalon2')
+WebUI.setEncryptedText(findTestObject('Object Repository/US3/Page_Login - PMVIZ/input_Password_password'), 'iGDxf8hSRT4=')
 
-WebUI.setText(findTestObject('Object Repository/US2/Page_Register - PMVIZ/input_Name_name'), 'Katalon2')
+WebUI.click(findTestObject('Object Repository/US3/Page_Login - PMVIZ/button_Log In'))
 
-WebUI.setText(findTestObject('Object Repository/US2/Page_Register - PMVIZ/input_Email address_email'), 'katalon2@mail.pt')
+WebUI.click(findTestObject('US2/Page_Home Page - PMVIZ/a_Criar Utilizadores'))
+
+WebUI.setText(findTestObject('Object Repository/US2/Page_Register - PMVIZ/input_Username_username'), 'katalon5')
+
+WebUI.setText(findTestObject('Object Repository/US2/Page_Register - PMVIZ/input_Name_name'), 'Katalon5')
+
+WebUI.setText(findTestObject('Object Repository/US2/Page_Register - PMVIZ/input_Email address_email'), 'katalon5@mail.pt')
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/US2/Page_Register - PMVIZ/select_Administrator                       _f4dc89'), 
     'Requester', true)
@@ -39,7 +45,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/US2/Page_Register - PMV
 
 WebUI.click(findTestObject('Object Repository/US2/Page_Register - PMVIZ/button_Sign Up'))
 
-WebUI.verifyElementPresent(findTestObject('US2/Page_Login - PMVIZ/p_Enter your email address and password to access'), 0)
+WebUI.verifyElementPresent(findTestObject('US2/Page_Criar utilizador - PMVIZ/div_Utilizador randomtest criado'), 0)
 
 WebUI.closeBrowser()
 

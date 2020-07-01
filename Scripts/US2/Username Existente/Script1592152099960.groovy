@@ -21,7 +21,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://localhost:44364/')
 
-WebUI.click(findTestObject('Page_Login - PMVIZ/b_Sign Up'))
+WebUI.setText(findTestObject('Object Repository/US3/Page_Login - PMVIZ/input_Username_username'), 'administrator')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/US3/Page_Login - PMVIZ/input_Password_password'), 'iGDxf8hSRT4=')
+
+WebUI.click(findTestObject('Object Repository/US3/Page_Login - PMVIZ/button_Log In'))
+
+WebUI.click(findTestObject('US2/Page_Home Page - PMVIZ/a_Criar Utilizadores'))
 
 WebUI.setText(findTestObject('US2/Page_Register - PMVIZ/input_Username_username'), 'admin')
 

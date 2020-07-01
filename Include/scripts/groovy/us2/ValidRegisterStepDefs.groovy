@@ -92,8 +92,8 @@ class ValidRegisterStepDefs {
 	@Then("I successfully register")
 	public void i_successfully_register() {
 
-		WebUI.verifyElementPresent(findTestObject('US2/Page_Login - PMVIZ/p_Enter your email address and password to access'), 0)
-		
+		WebUI.verifyElementPresent(findTestObject('US2/Page_Criar utilizador - PMVIZ/div_Utilizador randomtest criado'), 0)
+
 		WebUI.closeBrowser()
 	}
 }

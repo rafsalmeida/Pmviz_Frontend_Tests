@@ -6,7 +6,7 @@ Feature: Register
 	
   @tag1
   Scenario: Valid Register
-    Given I want to register
+    Given I am logged in as an administrator
     And I am in the register page
     When I insert an existing username
     And I insert a valid name

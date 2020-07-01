@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Aceder ao Registo</name>
+   <name>Cancelar Tagging</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>73fb7cbe-dddc-48ce-a106-fe27c6732f33</testCaseGuid>
+   <testCaseGuid>17608d36-6b7c-45df-9ef0-45620fa8060a</testCaseGuid>
 </TestCaseEntity>
