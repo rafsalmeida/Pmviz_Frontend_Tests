@@ -45,11 +45,11 @@ import cucumber.api.java.en.When
 
 
 class TableStepDefs {
-	
+
 	@Then("I see the table with info")
 	public void i_see_the_table_with_info() {
-	    WebUI.verifyElementPresent(findTestObject('US12/Page_Recursos - PMVIZ/div_Show 102550100 entriesSearch           _4d35be'), 
-    0)
+		WebUI.verifyElementPresent(findTestObject('US12/Page_Recursos - PMVIZ/div_Show 102550100 entriesSearch           _4d35be'),
+				0)
 
 		WebUI.closeBrowser()
 	}

@@ -47,12 +47,12 @@ import cucumber.api.java.en.When
 class AccessStatisticsStepDefs {
 	@When("I click on the Activities button of a process")
 	public void i_click_on_the_Activities_button_of_a_process() {
-	    WebUI.click(findTestObject('Object Repository/US6/Page_All Processes - PMVIZ/button_Activities'))
+		WebUI.click(findTestObject('Object Repository/US6/Page_Todos os Processos - PMVIZ/button_Atividades'))
 	}
-	
+
 	@Then("I have access to the statistics")
 	public void i_have_access_to_the_statistics() {
-	    WebUI.click(findTestObject('Object Repository/US6/Page_Activity Statistics - PMVIZ/h4_Activities Statistics'))
+		WebUI.click(findTestObject('Object Repository/US6/Page_Activity Statistics - PMVIZ/h4_Activities Statistics'))
 
 		WebUI.closeBrowser()
 	}

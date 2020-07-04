@@ -47,9 +47,8 @@ import cucumber.api.java.en.When
 class TableStepDefs {
 	@Then("I see the table with statistics data")
 	public void i_see_the_table_with_statistics_data() {
-	    WebUI.verifyElementPresent(findTestObject('US6/Page_Activity Statistics - PMVIZ/div_FrequencyMean DurationMedian DurationMinimum DurationMaximum DurationActivityRelative Frequency'), 
-    0)
+		WebUI.verifyElementPresent(findTestObject('US6/Page_Activity Statistics - PMVIZ/div_FrequencyMean DurationMedian DurationMinimum DurationMaximum DurationActivityRelative Frequency'),
+				0)
 		WebUI.closeBrowser()
-		
 	}
 }

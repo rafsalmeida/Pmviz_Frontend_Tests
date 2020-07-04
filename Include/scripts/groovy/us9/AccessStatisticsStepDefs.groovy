@@ -47,17 +47,15 @@ import cucumber.api.java.en.When
 class AccessStatisticsStepDefs {
 	@When("I click on the Resources button")
 	public void i_click_on_the_Resources_button() {
-		WebUI.click(findTestObject('US9/Page_All Processes - PMVIZ/button_Resources_25'))
-
+		WebUI.click(findTestObject('Object Repository/US6/Page_Todos os Processos - PMVIZ/button_Recursos'))
 	}
-	
+
 	@Then("I see the possibility to choose a type of resource and statistics")
 	public void i_see_the_possibility_to_choose_a_type_of_resource_and_statistics() {
-		
+
 		WebUI.verifyElementPresent(findTestObject('US9/Page_Resources Statistics - PMVIZ/h6_Choose the type of resource'), 0)
-		
+
 		WebUI.verifyElementPresent(findTestObject('US9/Page_Resources Statistics - PMVIZ/h6_Choose the type of statistics'), 0)
 		WebUI.closeBrowser()
-
 	}
 }

@@ -47,7 +47,7 @@ import cucumber.api.java.en.When
 class NoEventsStepDefs {
 	@When("I click on the Activities button of a process that has no events")
 	public void i_click_on_the_Activities_button_of_a_process_that_has_no_events() {
-		WebUI.click(findTestObject('US7/Page_All Processes - PMVIZ/button_Activities'))
+		WebUI.click(findTestObject('Object Repository/US9/Page_Todos os Processos - PMVIZ/button_Atividades'))
 	}
 
 	@Then("I see that there was an error retrieving the statistics")

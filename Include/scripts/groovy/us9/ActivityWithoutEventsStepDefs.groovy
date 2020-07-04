@@ -56,16 +56,15 @@ import org.openqa.selenium.support.ui.Select as Select
 class ActivityWithoutEventsStepDefs {
 	@When("I choose an activity without events")
 	public void i_choose_an_activity_without_events() {
-	    new Select(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/US9/Page_Resources Statistics - PMVIZ/select_Choose an activity                  _a0481f'), 
-    2)).selectByValue('10')
+		new Select(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/US9/Page_Resources Statistics - PMVIZ/select_Choose an activity                  _a0481f'),
+				2)).selectByValue('10')
 	}
-	
+
 	@Then("I see that there is no work in this activity")
 	public void i_see_that_there_is_no_work_in_this_activity() {
-	    WebUI.verifyElementPresent(findTestObject('US9/Page_Resources Statistics - PMVIZ/div_There are no records of any work in this activity'), 
-    0)
+		WebUI.verifyElementPresent(findTestObject('US9/Page_Resources Statistics - PMVIZ/div_There are no records of any work in this activity'),
+				0)
 
 		WebUI.closeBrowser()
-
 	}
 }

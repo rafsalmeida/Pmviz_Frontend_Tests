@@ -47,22 +47,21 @@ import cucumber.api.java.en.When
 class NoProcessesStepDefs {
 	@Given("I am logged in as an operator that has no processes")
 	public void i_am_logged_in_as_an_operator_that_has_no_processes() {
-	    WebUI.openBrowser('')
+		WebUI.openBrowser('')
 
 		WebUI.navigateToUrl('https://localhost:44364/')
-		
+
 		WebUI.setText(findTestObject('US14/Page_Login - PMVIZ/input_Username_username'), 'katalon4')
-		
+
 		WebUI.setEncryptedText(findTestObject('US14/Page_Login - PMVIZ/input_Password_password'), 'iGDxf8hSRT4=')
-		
+
 		WebUI.click(findTestObject('US1/Page_Login - PMVIZ/button_Log In'))
 	}
-	
+
 	@Then("I see there are no processes associated")
 	public void i_see_there_are_no_processes_associated() {
-	    WebUI.click(findTestObject('Object Repository/US14/Page_Minhas Estatsticas - PMVIZ/div_No processes associated to user katalon4'))
+		WebUI.click(findTestObject('Object Repository/US14/Page_Minhas Estatsticas - PMVIZ/div_No processes associated to user katalon4'))
 
 		WebUI.closeBrowser()
 	}
-
 }
