@@ -47,16 +47,14 @@ import cucumber.api.java.en.When
 class ProcessWithoutActivitiesStepDefs {
 	@When("I click on the Resources button of a process without activities")
 	public void i_click_on_the_Resources_button_of_a_process_without_activities() {
-		WebUI.click(findTestObject('US9/Page_All Processes - PMVIZ/button_Resources_6'))
-
+		WebUI.click(findTestObject('Object Repository/US9/Page_Todos os Processos - PMVIZ/button_Recursos'))
 	}
-	
+
 	@Then("I see that there was an error retrieving activities")
 	public void i_see_that_there_was_an_error_retrieving_activities() {
-	    WebUI.verifyElementPresent(findTestObject('Object Repository/US9/Page_Resources Statistics - PMVIZ/div_Error retrieving activities Please try _418a8c'), 
-    0)
+		WebUI.verifyElementPresent(findTestObject('Object Repository/US9/Page_Resources Statistics - PMVIZ/div_Error retrieving activities Please try _418a8c'),
+				0)
 
 		WebUI.closeBrowser()
 	}
-
 }

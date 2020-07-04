@@ -45,7 +45,7 @@
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>Enter your username</value>
+      <value>Insere o username</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

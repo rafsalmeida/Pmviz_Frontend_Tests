@@ -58,11 +58,11 @@ class ActivityWithoutEventsStepDefs {
 		new Select(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/US12/Page_Recursos - PMVIZ/select_Escolha uma atividade               _1acae4'),
 				2)).selectByValue('1')
 	}
-	
+
 	@Then("I see that there is no work on this activity")
 	public void i_see_that_there_is_no_work_on_this_activity() {
-		WebUI.verifyElementPresent(findTestObject('US12/Page_Recursos - PMVIZ/div_No workstations associated to that activity'), 
-    0)
+		WebUI.verifyElementPresent(findTestObject('US12/Page_Recursos - PMVIZ/div_No workstations associated to that activity'),
+				0)
 		WebUI.closeBrowser()
 	}
 }
