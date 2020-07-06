@@ -1,4 +1,4 @@
-package us19
+package us20
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,24 +44,17 @@ import cucumber.api.java.en.When
 
 
 
-class ProcessSelectedChooseDiferentProcess {
-	@When("I choose another Process with events")
-	public void i_choose_another_Process_with_events() {
-
-		WebUI.click(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/a_ProcessoDemo2'))
-		
-		WebUI.selectOptionByValue(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/select_Escolha um processo                 _07960d'),
-			'29', true)
+class PerformanceGraphWithAlphaMinerStepDefs {
+	@When("I select performance graph")
+	public void i_select_performance_graph() {
+		WebUI.click(findTestObject('Object Repository/US20/Page_Grafo Freq e Desem - PMVIZ/input_Grafo de frequncia_graph'))
 	}
-
-	@Then("I see that the frequency graph generated with another process")
-	public void i_see_that_the_frequency_graph_generated() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/h4_Processo escolhido ProcessoDemo2'),
-			0)
-
+	
+	@Then("I see that the performance graph generated")
+	public void i_see_that_the_performance_graph_generated() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/US20/Page_Grafo Freq e Desem - PMVIZ/h4_Processo escolhido ProcessoDemo1'), 
+		    0)
+		
 		WebUI.closeBrowser()
 	}
 }
-
-
-

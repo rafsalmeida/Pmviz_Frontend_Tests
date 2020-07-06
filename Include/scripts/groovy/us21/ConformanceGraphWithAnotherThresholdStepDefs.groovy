@@ -1,4 +1,4 @@
-package us19
+package us21
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,19 +44,10 @@ import cucumber.api.java.en.When
 
 
 
-class DropdownAtLeastWithOneProcess {
-	@When("I click on the Processes select")
-	public void i_click_on_the_Processes_select() {
-		WebUI.click(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/button_Escolha um processo'))
-	}
-
-	@Then("I see the at least one process")
-	public void i_see_the_at_least_one_process() {
-		WebUI.click(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/span_ProcessoMaio'))
-
-		WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/select_Escolha um processo                 _07960d'),
-				0, FailureHandling.STOP_ON_FAILURE)
-
-		WebUI.closeBrowser()
+class ConformanceGraphWithAnotherThresholdStepDefs {
+	@When("I change the threshold")
+	public void i_change_the_threshold() {
+		WebUI.setText(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/input_Threshold_thresholdInput'),
+				'0.9')
 	}
 }
