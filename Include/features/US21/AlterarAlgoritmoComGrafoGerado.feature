@@ -1,7 +1,7 @@
 @tag
 Feature: Conformance Graph
 		As a manager
-		I want to see conformance graph and switch miners 
+		I want to see conformance graph and then switch miner
 		So that I can see the conformance of each activity
   @tag1
   Scenario: Generate conformance graph and then switch the miner

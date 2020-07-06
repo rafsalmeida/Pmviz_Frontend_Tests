@@ -9,4 +9,4 @@ Feature: Conformance Graph
     When I click on the conformance graph tab
     And I click on the reference process select
     And I select a reference process with events
-    Then I see that at least one mold, one activity and one Operator on the selects of process filter
+    Then I see that at least one mold, one activity and one operator on the selects of process filter
