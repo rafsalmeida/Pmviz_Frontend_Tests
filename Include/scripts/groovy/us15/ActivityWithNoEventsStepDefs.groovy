@@ -63,8 +63,8 @@ class ActivityWithNoEventsStepDefs {
 	@Then("I see that there are no events associated")
 	public void i_see_that_there_are_no_events_associated() {
 	    
-		WebUI.verifyElementPresent(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/div_There are no records of your mean times in this activity'), 
-		    0)
+		WebUI.verifyElementPresent(findTestObject('US15/Page_PMVIZ - Minhas Estatsticas/div_O utilizador tokyo no tem entradas associadas  atividade 10'), 
+    0)
 		
 		WebUI.closeBrowser()
 	}

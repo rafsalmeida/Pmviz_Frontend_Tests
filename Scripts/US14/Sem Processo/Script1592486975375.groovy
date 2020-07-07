@@ -31,7 +31,7 @@ WebUI.click(findTestObject('US1/Page_Login - PMVIZ/button_Log In'))
 
 WebUI.click(findTestObject('US14/Page_Home Page - PMVIZ/a_Minhas Estatsticas'))
 
-WebUI.verifyElementPresent(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/div_No processes associated to user katalon4'), 
+WebUI.verifyElementPresent(findTestObject('US14/Page_PMVIZ - Minhas Estatsticas/div_No existem processos associados ao utilizador katalon4'), 
     0)
 
 WebUI.closeBrowser()

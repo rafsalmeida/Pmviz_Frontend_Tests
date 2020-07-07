@@ -29,8 +29,7 @@ WebUI.click(findTestObject('Object Repository/US14/Page_Login - PMVIZ/button_Log
 
 WebUI.click(findTestObject('Object Repository/US14/Page_Home Page - PMVIZ/a_Minhas Estatsticas'))
 
-WebUI.verifyElementPresent(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/div_Processos                              _620df1'), 
-    0)
+WebUI.verifyElementPresent(findTestObject('US14/Page_PMVIZ - Minhas Estatsticas/h4_Lista dos meus processos'), 0)
 
 WebUI.closeBrowser()
 

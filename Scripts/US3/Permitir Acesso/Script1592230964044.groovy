@@ -40,13 +40,13 @@ WebUI.click(findTestObject('Object Repository/US3/Page_Home Page - PMVIZ/span_Ma
 new Select(WebUiCommonHelper.findWebElement(findTestObject('US3/Page_Manage Access - PMVIZ/select_Choose a role                       _11b9c3'), 
     2)).selectByValue('Operator')
 
-WebUI.click(findTestObject('US3/Page_Manage Access - PMVIZ/li_See the list of all Processes_2'))
+WebUI.click(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/li_Ver a lista de todos os processos_2'))
 
-WebUI.click(findTestObject('US3/Page_Manage Access - PMVIZ/a_Not Allowed_k-button k-button-icon_2'))
+WebUI.click(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/a_Permitido_k-button k-button-icon_2'))
 
-WebUI.click(findTestObject('US3/Page_Manage Access - PMVIZ/button_Save'))
+WebUI.click(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/button_Salvar'))
 
-WebUI.verifyElementPresent(findTestObject('US3/Page_Manage Access - PMVIZ/div_Changes successfully made'), 0)
+WebUI.verifyElementPresent(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/div_Mudanas bem sucedidas'), 0)
 
 WebUI.closeBrowser()
 

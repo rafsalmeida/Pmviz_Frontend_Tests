@@ -55,8 +55,9 @@ class AllowAccessStepDefs {
 	@When("I choose a route to allow")
 	public void i_choose_a_route_to_allow() {
 	    
-		WebUI.click(findTestObject('US3/Page_Manage Access - PMVIZ/li_See the list of all Processes_2'))
-		
-		WebUI.click(findTestObject('US3/Page_Manage Access - PMVIZ/a_Not Allowed_k-button k-button-icon_2'))
+		WebUI.click(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/li_Ver a lista de todos os processos_2'))
+
+		WebUI.click(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/a_Permitido_k-button k-button-icon_2'))
+
 	}
 }

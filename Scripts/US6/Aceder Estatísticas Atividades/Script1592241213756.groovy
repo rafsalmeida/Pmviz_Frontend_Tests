@@ -29,7 +29,7 @@ WebUI.sendKeys(findTestObject('Object Repository/US6/Page_Login - PMVIZ/input_Pa
 
 WebUI.click(findTestObject('Object Repository/US6/Page_Home Page - PMVIZ/a_Processes and Statistics'))
 
-WebUI.click(findTestObject('Object Repository/US6/Page_All Processes - PMVIZ/button_Activities'))
+WebUI.click(findTestObject('US6/Page_PMVIZ - Todos os Processos/button_Atividades'))
 
 WebUI.click(findTestObject('Object Repository/US6/Page_Activity Statistics - PMVIZ/h4_Activities Statistics'))
 

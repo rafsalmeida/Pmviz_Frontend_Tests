@@ -55,13 +55,15 @@ import org.openqa.selenium.support.ui.Select as Select
 class MouldPartsStepDefs {
 	@When("I choose a mould")
 	public void i_choose_a_mould() {
-	    new Select(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/US16/Page_Tag - PMVIZ/select_Escolha um molde                    _01b325'), 
-    2)).selectByValue('1')
+	    new Select(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/US16/Page_PMVIZ - Tag/select_Escolha uma estao                                TAG1                                TAG2'), 
+    2)).selectByValue('22')
+	new Select(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/US16/Page_Tag - PMVIZ/select_Escolha um molde                    _01b325'),
+		2)).selectByValue('mouldA')
 	}
 	
 	@Then("I see the its parts")
 	public void i_see_the_its_parts() {
-	  WebUI.verifyElementPresent(findTestObject('Object Repository/US16/Page_Tag - PMVIZ/div_Parts                Show 102550100 ent_482dfe'), 
+	  WebUI.verifyElementPresent(findTestObject('Object Repository/US16/Page_PMVIZ - Tag/h4_Peas do molde mouldA'), 
     0)
 
 	  WebUI.closeBrowser()
