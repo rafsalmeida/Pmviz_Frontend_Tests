@@ -44,9 +44,19 @@ import cucumber.api.java.en.When
 
 
 
-class GraphWithAnotherThreshold {
-	@When("I change the treshold")
-	public void i_change_the_treshold() {
-		WebUI.setText(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/input_Threshold_thresholdInput'), '0.9')
+class DropdownAtLeastWithOneProcessStepDefs {
+	@When("I click on the Processes select")
+	public void i_click_on_the_Processes_select() {
+		WebUI.click(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/button_Escolha um processo'))
+	}
+
+	@Then("I see the at least one process")
+	public void i_see_the_at_least_one_process() {
+		WebUI.click(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/span_ProcessoMaio'))
+
+		WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/select_Escolha um processo                 _07960d'),
+				0, FailureHandling.STOP_ON_FAILURE)
+
+		WebUI.closeBrowser()
 	}
 }

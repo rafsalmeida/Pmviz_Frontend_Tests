@@ -1,4 +1,4 @@
-package us20
+package us21
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,15 +44,18 @@ import cucumber.api.java.en.When
 
 
 
-class PerformanceGraphWithAlphaMiner {
-	@When("I select performance graph")
-	public void i_select_performance_graph() {
-		WebUI.click(findTestObject('Object Repository/US20/Page_Grafo Freq e Desem - PMVIZ/input_Grafo de frequncia_graph'))
+class SelectProcessWithoutEventsStepDefs {
+	@When("I select a reference process without events")
+	public void i_select_a_reference_process_without_events() {
+	    WebUI.click(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/a_ProcessoMaio'))
+
+		WebUI.selectOptionByValue(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/select_Escolha o processo                  _67bf3e'), 
+		    '12', true)
 	}
 	
-	@Then("I see that the performance graph generated")
-	public void i_see_that_the_performance_graph_generated() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/US20/Page_Grafo Freq e Desem - PMVIZ/h4_Processo escolhido ProcessoDemo1'), 
+	@Then("I see that the reference process selected has no events")
+	public void i_see_that_the_reference_process_selected_has_no_events() {
+	    WebUI.verifyElementPresent(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/h5_O processo selecionado no tem eventos'), 
 		    0)
 		
 		WebUI.closeBrowser()

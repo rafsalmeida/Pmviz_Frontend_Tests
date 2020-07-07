@@ -1,4 +1,4 @@
-package us19
+package us21
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -42,21 +42,22 @@ import cucumber.api.java.en.Given
 import cucumber.api.java.en.Then
 import cucumber.api.java.en.When
 
-class FrequencyGraphWithAlphaMiner {
-	@When("I select a Process with events")
-	public void i_select_a_Process_with_events() {
 
-		WebUI.click(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/a_ProcessoDemo1'))
 
-		WebUI.selectOptionByValue(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/select_Escolha um processo                 _07960d'),
-				'25', true)
+class ConformanceGraphWithAlphaMinerStepDefs {
+	@When("I select a reference process with events")
+	public void i_select_a_reference_process_with_events() {
+	    WebUI.click(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/span_ProcessoDemo1'))
+
+		WebUI.selectOptionByValue(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/select_Escolha o processo                  _9b71c2'), 
+		    '25', true)
 	}
-
-	@Then("I see that the frequency graph generated")
-	public void i_see_that_the_frequency_graph_generated() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/h4_Processo escolhido ProcessoDemo1'),
-				0)
-
+	
+	@Then("I see that the conformance graph generated")
+	public void i_see_that_the_conformance_graph_generated() {
+	    WebUI.verifyElementPresent(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/h4_Processo de referncia ProcessoDemo1'), 
+		    0)
+		
 		WebUI.closeBrowser()
 	}
 }

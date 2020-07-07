@@ -20,20 +20,23 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://localhost:44364/')
 
-WebUI.setText(findTestObject('US19/Page_Login - PMVIZ/input_Username_username'), 'administrator')
+WebUI.setText(findTestObject('Object Repository/US21/Page_Login - PMVIZ/input_Username_username'), 'admin')
 
-WebUI.setEncryptedText(findTestObject('US19/Page_Login - PMVIZ/input_Password_password'), 'iGDxf8hSRT4=')
+WebUI.setEncryptedText(findTestObject('Object Repository/US21/Page_Login - PMVIZ/input_Password_password'), 'iGDxf8hSRT4=')
 
-WebUI.click(findTestObject('US19/Page_Login - PMVIZ/button_Log In'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Object Repository/US21/Page_Login - PMVIZ/button_Log In'))
 
-WebUI.click(findTestObject('US19/Page_Home Page - PMVIZ/span_Grafo Freq e Desemp'))
+WebUI.click(findTestObject('Object Repository/US21/Page_Home Page - PMVIZ/span_Grafo Conformidade'))
 
-WebUI.click(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/button_Escolha um processo'))
+WebUI.click(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/div_Escolha o processo'))
 
-WebUI.click(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/span_ProcessoMaio'))
+WebUI.click(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/a_ProcessoMaio'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Freq Perf Graph - PMVIZ/select_Escolha um processo                 _07960d'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+WebUI.selectOptionByValue(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/select_Escolha o processo                  _67bf3e'), 
+    '12', true)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/US21/Page_Grafo de Conformidade - PMVIZ/h5_O processo selecionado no tem eventos'), 
+    0)
 
 WebUI.closeBrowser()
 
