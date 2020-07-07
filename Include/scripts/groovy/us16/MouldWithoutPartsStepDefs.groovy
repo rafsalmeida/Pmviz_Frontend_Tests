@@ -56,6 +56,8 @@ class MouldWithoutPartsStepDefs {
 
 	@When("I choose a mould without parts")
 	public void i_choose_a_mould_without_parts() {
+		new Select(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/US16/Page_PMVIZ - Tag/select_Escolha uma estao                                TAG1                                TAG2'),
+			2)).selectByValue('22')
 		new Select(WebUiCommonHelper.findWebElement(findTestObject('Object Repository/US16/Page_Tag - PMVIZ/select_Escolha um molde                    _01b325'),
 		2)).selectByValue('mouldKatalon')
 	}

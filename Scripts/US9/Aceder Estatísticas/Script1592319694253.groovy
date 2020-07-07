@@ -29,11 +29,11 @@ WebUI.sendKeys(findTestObject('Page_Login - PMVIZ/input_Password_password'), Key
 
 WebUI.click(findTestObject('Page_Home Page - PMVIZ/a_Processes and Statistics'))
 
-WebUI.click(findTestObject('US9/Page_All Processes - PMVIZ/button_Resources_25'))
+WebUI.click(findTestObject('US9/Page_PMVIZ - Todos os Processos/button_Recursos'))
 
-WebUI.verifyElementPresent(findTestObject('US9/Page_Resources Statistics - PMVIZ/h6_Choose the type of resource'), 0)
+WebUI.verifyElementPresent(findTestObject('US9/Page_PMVIZ - Recursos/h6_Escolha um tipo de recurso'), 0)
 
-WebUI.verifyElementPresent(findTestObject('US9/Page_Resources Statistics - PMVIZ/h6_Choose the type of statistics'), 0)
+WebUI.verifyElementPresent(findTestObject('US9/Page_PMVIZ - Recursos/h6_Escolha um tipo de estatsticas'), 0)
 
 WebUI.closeBrowser()
 

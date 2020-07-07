@@ -55,7 +55,7 @@ class PersonalStatsStepDefs {
 	
 	@When("I click on the Statistics button")
 	public void i_click_on_the_Statistics_button() {
-	    WebUI.click(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/button_Estatsticas'))
+	    WebUI.click(findTestObject('US15/Page_PMVIZ - Minhas Estatsticas/button_Estatsticas'))
 
 	}
 	

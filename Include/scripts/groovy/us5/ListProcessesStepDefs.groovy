@@ -53,7 +53,7 @@ class ListProcessesStepDefs {
 	
 	@Then("I see the list of processes")
 	public void i_see_the_list_of_processes() {
-	    WebUI.click(findTestObject('Object Repository/US5/Page_All Processes - PMVIZ/h4_All Processes'))
+	    WebUI.click(findTestObject('US5/Page_PMVIZ - Todos os Processos/h2_Lista de processos'))
 
 		WebUI.closeBrowser()
 

@@ -36,12 +36,12 @@ WebUI.click(findTestObject('Object Repository/US14/Page_Login - PMVIZ/button_Log
 
 WebUI.click(findTestObject('Object Repository/US14/Page_Home Page - PMVIZ/a_Minhas Estatsticas'))
 
-WebUI.click(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/button_Estatsticas'))
+WebUI.click(findTestObject('US15/Page_PMVIZ - Minhas Estatsticas/button_Estatsticas'))
 
 new Select(WebUiCommonHelper.findWebElement(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/select_Escolha um'), 2)).selectByValue(
     '10')
 
-WebUI.verifyElementPresent(findTestObject('US15/Page_Minhas Estatsticas - PMVIZ/div_There are no records of your mean times in this activity'), 
+WebUI.verifyElementPresent(findTestObject('US15/Page_PMVIZ - Minhas Estatsticas/div_O utilizador tokyo no tem entradas associadas  atividade 10'), 
     0)
 
 WebUI.closeBrowser()

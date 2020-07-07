@@ -37,13 +37,12 @@ WebUI.click(findTestObject('Object Repository/US3/Page_Login - PMVIZ/button_Log 
 
 WebUI.click(findTestObject('Object Repository/US3/Page_Home Page - PMVIZ/span_Manage Access'))
 
-
 new Select(WebUiCommonHelper.findWebElement(findTestObject('US3/Page_Manage Access - PMVIZ/select_Choose a role                       _11b9c3'), 
     2)).selectByValue('Operator')
 
-WebUI.verifyElementPresent(findTestObject('US3/Page_Manage Access - PMVIZ/label_Allowed'), 0)
+WebUI.verifyElementPresent(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/label_Permitido'), 0)
 
-WebUI.verifyElementPresent(findTestObject('US3/Page_Manage Access - PMVIZ/label_Not Allowed'), 0)
+WebUI.verifyElementPresent(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/label_Probido'), 0)
 
 WebUI.closeBrowser()
 

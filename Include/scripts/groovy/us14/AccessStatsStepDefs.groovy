@@ -66,8 +66,8 @@ class AccessStatsStepDefs {
 	
 	@Then("I see the list of processes I worked in")
 	public void i_see_the_list_of_processes_I_worked_in() {
-	    WebUI.verifyElementPresent(findTestObject('Object Repository/US14/Page_Minhas Estatsticas - PMVIZ/div_Processos                              _620df1'), 
-    0)
+	    WebUI.verifyElementPresent(findTestObject('US14/Page_PMVIZ - Minhas Estatsticas/h4_Lista dos meus processos'), 0)
+
 
 		WebUI.closeBrowser()
 

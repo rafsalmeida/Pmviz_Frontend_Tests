@@ -60,8 +60,8 @@ class NoProcessesStepDefs {
 
 	@Then("I see there are no processes associated")
 	public void i_see_there_are_no_processes_associated() {
-		WebUI.click(findTestObject('Object Repository/US14/Page_Minhas Estatsticas - PMVIZ/div_No processes associated to user katalon4'))
-
+		WebUI.verifyElementPresent(findTestObject('US14/Page_PMVIZ - Minhas Estatsticas/div_No existem processos associados ao utilizador katalon4'), 
+    0)
 		WebUI.closeBrowser()
 	}
 }

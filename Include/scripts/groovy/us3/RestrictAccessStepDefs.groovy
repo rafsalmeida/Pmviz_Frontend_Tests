@@ -55,20 +55,20 @@ class RestrictAccessStepDefs {
 	@When("I choose a route to restrict")
 	public void i_choose_a_route_to_restrict() {
 
-		WebUI.click(findTestObject('US3/Page_Manage Access - PMVIZ/li_See the list of all Processes'))
+		WebUI.click(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/li_Ver a lista de todos os processos_1'))
 
-		WebUI.click(findTestObject('US3/Page_Manage Access - PMVIZ/a_Not Allowed_k-button k-button-icon'))
+		WebUI.click(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/a_Permitido_k-button k-button-icon_1'))
 	}
 
 	@When("I click on the save button")
 	public void i_click_on_the_save_button() {
-		WebUI.click(findTestObject('US3/Page_Manage Access - PMVIZ/button_Save'))
+		WebUI.click(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/button_Salvar'))
 	}
 
 	@Then("I see the changes were succesfull")
 	public void i_see_the_changes_were_succesfull() {
 
-		WebUI.verifyElementPresent(findTestObject('US3/Page_Manage Access - PMVIZ/div_Changes successfully made'), 0)
+		WebUI.verifyElementPresent(findTestObject('US3/Page_PMVIZ - Controlo de Acesso/div_Mudanas bem sucedidas'), 0)
 
 		WebUI.closeBrowser()
 	}
