@@ -68,7 +68,7 @@ class ValidLoginStepDefs {
 
 	@Then("I successfully login")
 	public void i_successfully_login() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/US1/Page_Home Page - PMVIZ/h4_Home'), 0)
+		WebUI.verifyElementPresent(findTestObject('US1/Page_PMVIZ - Home Page/h3_PMVIZ'), 0)
 
 		WebUI.closeBrowser()
 	}

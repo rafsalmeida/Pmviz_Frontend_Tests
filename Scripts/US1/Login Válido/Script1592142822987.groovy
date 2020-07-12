@@ -27,7 +27,7 @@ WebUI.setEncryptedText(findTestObject('Object Repository/US1/Page_Login - PMVIZ/
 
 WebUI.click(findTestObject('Object Repository/US1/Page_Login - PMVIZ/button_Log In'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/US1/Page_Home Page - PMVIZ/h4_Home'), 0)
+WebUI.verifyElementPresent(findTestObject('US1/Page_PMVIZ - Home Page/h3_PMVIZ'), 0)
 
 WebUI.closeBrowser()
 
