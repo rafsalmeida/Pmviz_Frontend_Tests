@@ -44,9 +44,20 @@ import cucumber.api.java.en.When
 
 
 
-class FrequencyGraphWithHeuristicMiner {
-	@When("I select heuristic miner")
-	public void i_select_heuristic_miner() {
-		WebUI.click(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/input_Alpha_miner'))
+class SelectProcessWithoutEventsStepDefs {
+	@When("I select a Process without events")
+	public void i_select_a_Process_without_events() {
+		WebUI.click(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/span_ProcessoMaio'))
+
+		WebUI.selectOptionByValue(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/select_Escolha um processo                 _07960d'),
+				'12', true)
+	}
+
+	@Then("I see that the process selected has no events")
+	public void i_see_that_my_process_has_no_events() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/div_Este processo no tem eventos'),
+				0)
+
+		WebUI.closeBrowser()
 	}
 }

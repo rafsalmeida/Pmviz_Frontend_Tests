@@ -5,7 +5,7 @@ Feature: Frequency Graph
 		So that I can see the frequency of each activity
 
   @tag1
-  Scenario: Generate frequency graph with Heuristic algorithm
+  Scenario: Generate frequency graph with heuristic miner
     Given I am logged in
     When I click on the frequency graph tab
     And I select heuristic miner

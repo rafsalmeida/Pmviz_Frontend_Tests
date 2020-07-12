@@ -44,17 +44,24 @@ import cucumber.api.java.en.When
 
 
 
-class ProcessSelectedChooseaAnotherGraph {
-	@When("I select another type of graph")
-	public void i_select_another_type_of_graph() {
-	    WebUI.click(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/input_Grafo de frequncia_graph'))
-	}
-	
-	@Then("I see that the type of graph change")
-	public void i_see_that_the_type_of_graph_change() {
-	    WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/h4_Informao do grafo de desempenho'), 
-		    0)
+class ProcessSelectedChooseDiferentProcessStepDefs {
+	@When("I choose another Process with events")
+	public void i_choose_another_Process_with_events() {
+
+		WebUI.click(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/a_ProcessoDemo2'))
 		
+		WebUI.selectOptionByValue(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/select_Escolha um processo                 _07960d'),
+			'29', true)
+	}
+
+	@Then("I see that the frequency graph generated with another process")
+	public void i_see_that_the_frequency_graph_generated() {
+		WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/h4_Processo escolhido ProcessoDemo2'),
+			0)
+
 		WebUI.closeBrowser()
 	}
 }
+
+
+

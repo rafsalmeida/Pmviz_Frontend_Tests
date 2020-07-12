@@ -1,4 +1,4 @@
-package us19
+package us21
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -44,20 +44,30 @@ import cucumber.api.java.en.When
 
 
 
-class SelectProcessWithoutEvents {
-	@When("I select a Process without events")
-	public void i_select_a_Process_without_events() {
-		WebUI.click(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/span_ProcessoMaio'))
+class FiltProccByOpActMoldStepDefs {
+	@When("I select one mold, one activity and one operator on the selects of filter process")
+	public void i_select_one_mold_one_activity_and_one_operator_on_the_selects_of_filter_process() {
+		WebUI.click(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/div_Nenhum molde selecionado'))
 
-		WebUI.selectOptionByValue(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/select_Escolha um processo                 _07960d'),
-				'12', true)
-	}
+		WebUI.click(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/a_mouldA'))
 
-	@Then("I see that the process selected has no events")
-	public void i_see_that_my_process_has_no_events() {
-		WebUI.verifyElementPresent(findTestObject('Object Repository/US19/Page_Grafo Freq e Desem - PMVIZ/div_Este processo no tem eventos'),
-				0)
+		WebUI.selectOptionByValue(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/select_mouldAmouldBmouldCmouldD'), 'mouldA',
+				true)
 
-		WebUI.closeBrowser()
+		WebUI.click(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/div_Nenhuma atividade selecionada'))
+
+		WebUI.click(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/span_Desenho Molde'))
+
+		WebUI.selectOptionByValue(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/select_Desenho MoldePreparar MateriaisTaggi_6b1cb5'),
+				'Desenho Molde', true)
+
+		WebUI.click(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/div_Nenhuma operador selecionado'))
+
+		WebUI.click(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/a_denver'))
+
+		WebUI.selectOptionByValue(findTestObject('Object Repository/US21/Page_PMVIZ - Grafo de Conformidade/select_denverlisboanairobitokyouser1'), 'denver',
+				true)
+
+		WebUI.delay(5)
 	}
 }
